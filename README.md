@@ -1,16 +1,46 @@
-# React + Vite
+# Portfolio 3D Intelligent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![CI](https://github.com/BOZYILDIZ/portfolio-test-3D/actions/workflows/ci.yml/badge.svg)](https://github.com/BOZYILDIZ/portfolio-test-3D/actions/workflows/ci.yml)
 
-Currently, two official plugins are available:
+Application React + Vite mettant en avant un portfolio 3D interactif basé sur `three`, `@react-three/fiber` et `@react-three/drei`, avec animations via `gsap`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prérequis
 
-## React Compiler
+- Node.js ≥ 18
+- pnpm (recommandé, un `pnpm-lock.yaml` est présent)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+```bash
+pnpm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+
+- `pnpm dev` : démarre le serveur de développement Vite
+- `pnpm build` : génère la build de production
+- `pnpm preview` : prévisualise la build localement
+- `pnpm lint` : exécute ESLint
+
+## Démarrage rapide
+
+```bash
+pnpm install
+pnpm dev
+```
+
+## Pile technique
+
+- React 19
+- Vite 7
+- three.js, @react-three/fiber, @react-three/drei
+- GSAP
+- ESLint (configuration de base fournie)
+
+## Intégration Continue
+
+Un workflow GitHub Actions vérifie le lint et la build à chaque push et pull request sur `main`.
+
+## Déploiement
+
+Le projet peut être déployé sur GitHub Pages, Netlify ou Vercel. Pour Pages avec Vite, vous pouvez utiliser `vite build` puis publier le dossier `dist/`.
